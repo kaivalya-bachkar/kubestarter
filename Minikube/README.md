@@ -2,13 +2,6 @@
 
 This guide provides step-by-step instructions for installing Minikube on Ubuntu. Minikube allows you to run a single-node Kubernetes cluster locally for development and testing purposes.
 
-## Pre-requisites
-
-* Ubuntu OS
-* sudo privileges
-* Internet access
-* Virtualization support enabled (Check with `egrep -c '(vmx|svm)' /proc/cpuinfo`, 0=disabled 1=enabled) 
-
 ---
 
 ## Step 1: Update System Packages
@@ -82,7 +75,7 @@ This command will start a single-node Kubernetes cluster inside a Docker contain
 
 ---
 
-## Step 7: Check Cluster Status
+## Step 5: Check Cluster Status
 
 Check the cluster status with:
 
@@ -98,7 +91,7 @@ kubectl get nodes
 
 ---
 
-## Step 8: Stop Minikube
+## Step 6: Stop Minikube
 
 When you are done, you can stop the Minikube cluster with:
 
