@@ -16,6 +16,7 @@ kubectl version --client
 rm -f kubectl
 
 sudo apt-get install docker.io -y
+sudo systemctl enable --now docker
 sudo usermod -aG docker $USER && newgrp docker
 
 echo "kubectl & Docker installation complete."
