@@ -129,9 +129,3 @@ Delete the KIND cluster:
 
 kind delete cluster --name my-kind-cluster
 ```
-
-## 5. Notes
-
-Multiple Clusters: KIND supports multiple clusters. Use unique --name for each cluster.
-Custom Node Images: Specify Kubernetes versions by updating the image in the configuration file.
-Ephemeral Clusters: KIND clusters are temporary and will be lost if Docker is restarted.
