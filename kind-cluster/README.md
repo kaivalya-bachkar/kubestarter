@@ -4,9 +4,19 @@
 ```bash
 sudo apt-get update -y
 ```
+
+## Install the Docker
+```
+sudo apt-get install docker.io -y
+```
+
+## Add the User in Docker group and Refresh the group
+```
+sudo usermod -aG docker $USER && newgrp docker
+```
 ## KIND Cluster Setup Guide
 
-## 1. Installing KIND, kubectl, & Docker
+## 1. Installing KIND, & kubectl
 Install KIND and kubectl using the provided script:
 ```bash
 
@@ -28,8 +38,6 @@ kubectl version --client
 rm -f kubectl
 rm -rf kind
 
-sudo apt-get install docker.io -y
-sudo usermod -aG docker $USER && newgrp docker
 echo "kind & kubectl installation complete."
 ```
 
