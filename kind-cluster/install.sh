@@ -21,7 +21,4 @@ kubectl version --client
 rm -f kubectl
 rm -rf kind
 
-sudo apt-get install docker.io -y
-sudo usermod -aG docker $USER && newgrp docker
-
 echo "kind, kubectl & Docker installation complete."
